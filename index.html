@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaias | Desenvolvedor Web & Jogos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #09d3ac;
+      --secondary: #23232e;
+      --background: #181820;
+      --text: #f1f1f1;
+      --card: #22222d;
+      --accent: #ffce00;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: var(--background);
+      color: var(--text);
+      font-family: 'Montserrat', Arial, sans-serif;
+      min-height: 100vh;
+    }
+    header {
+      background: var(--secondary);
+      padding: 3rem 0 2rem 0;
+      text-align: center;
+      box-shadow: 0 2px 16px #0005;
+    }
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid var(--primary);
+      object-fit: cover;
+      margin-bottom: 1.3rem;
+      background: #111;
+    }
+    h1 {
+      font-size: 2.7rem;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 0.4rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+    }
+    .bio {
+      max-width: 510px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      padding: 0 1rem;
+    }
+    main {
+      max-width: 830px;
+      margin: 2.5rem auto 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+    @media (max-width: 700px) {
+      main {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+      }
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 4px 28px #0003;
+      padding: 2.2rem 2rem 1.5rem 2rem;
+      min-height: 270px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: transform 0.18s;
+    }
+    .card:hover {
+      transform: translateY(-7px) scale(1.02);
+      box-shadow: 0 8px 32px #0005;
+    }
+    .card-title {
+      color: var(--primary);
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.9rem;
+      letter-spacing: 1px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .skill {
+      background: var(--secondary);
+      color: var(--primary);
+      border-radius: 18px;
+      padding: 0.4em 1.1em;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      border: 1px solid #333;
+      transition: background 0.2s;
+    }
+    .skill:hover {
+      background: var(--primary);
+      color: var(--secondary);
+    }
+    .github-link {
+      display: inline-block;
+      margin-top: 1.2rem;
+      color: var(--secondary);
+      background: var(--primary);
+      padding: 0.7em 1.7em;
+      border-radius: 2em;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.08rem;
+      transition: background 0.2s;
+      box-shadow: 0 2px 8px #0002;
+    }
+    .github-link:hover {
+      background: var(--accent);
+      color: #181820;
+    }
+    .projects-list {
+      margin-top: 0.7rem;
+    }
+    .project {
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid #35354e82;
+    }
+    .project:last-child {
+      border-bottom: none;
+    }
+    .project-title {
+      font-size: 1.12rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+    .project-desc {
+      color: #aaa;
+      font-size: 0.98rem;
+      margin-bottom: 0.22rem;
+    }
+    .project-link {
+      color: var(--primary);
+      text-decoration: underline;
+      font-size: 0.99rem;
+    }
+    footer {
+      text-align: center;
+      color: #888;
+      padding: 2.5rem 1rem 1rem 1rem;
+      background: none;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="profile-img" src="https://avatars.githubusercontent.com/u/210780063?v=4" alt="Foto de Isaias">
+    <h1>Isaias</h1>
+    <h2>Desenvolvedor Web & Desenvolvedor de Jogos</h2>
+    <div class="bio">
+      Me chamo Isaias, tenho 15 anos, amo tecnologia e inovação. Trabalho com desenvolvimento web e jogos digitais, sempre buscando criar experiências incríveis e criativas.<br><br>
+    </div>
+  </header>
+  <main>
+    <section class="card">
+      <div class="card-title">Habilidades</div>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">Java</span>
+        <span class="skill">Desenvolvimento Web</span>
+        <span class="skill">Desenvolvimento de Jogos</span>
+      </div>
+      <a class="github-link" href="https://github.com/Sucaogood" target="_blank">Meu GitHub</a>
+    </section>
+    <section class="card">
+      <div class="card-title">Projetos em Destaque</div>
+      <div class="projects-list">
+        <div style="color: #888; font-style:italic;">Em breve.</div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    © 2025 Isaias.
+  </footer>
+</body>
+</html>
